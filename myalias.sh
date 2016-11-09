@@ -34,13 +34,20 @@ alias pstop='sudo killall php-fpm'
 alias pconf='open "/usr/local/etc/php/7.0"'
 
 # nginx
-alias nnstart='sudo nginx'
-alias nnstop='sudo nginx -s stop'
-alias nnr='sudo nginx -s reload'
-alias nnsite='open "/pathto/server/nginx-notes/private/my-nginx-confs"'
-alias nnlog='tail -f "/usr/local/nginx/logs/error.log"'
-alias nnlogg='tail -f "/usr/local/nginx/logs/access.log"'
-alias nconf='open "/usr/local/nginx-1.11.3/conf/nginx.conf"'
+
+nginxPath="/usr/local/Cellar/nginx/1.10.2_1"
+nginxConfPath="/usr/local/etc/nginx"
+
+
+alias nstart='sudo nginx'
+alias nstop='sudo nginx -s stop'
+alias nr='sudo nginx -s reload'
+alias nsite='open "/pathto/server/nginx-notes/private/my-nginx-confs"'
+alias nlog='tail -f "$nginxPath/logs/error.log"'
+alias nlogg='tail -f "$nginxPath/logs/access.log"'
+alias nconf='open "$nginxConfPath/nginx.conf"'
+
+
 
 
 #------------------------------
@@ -83,3 +90,5 @@ export PATH="/usr/local/libiconv/bin:$PATH"
 export PATH="/usr/local/nginx/sbin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:~/.vimpkg/bin"
+# http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
+export PATH="$PATH:/usr/local/mysql/bin"
