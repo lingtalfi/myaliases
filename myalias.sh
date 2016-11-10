@@ -8,7 +8,7 @@ alias aas='source ~/.bash_profile'
 alias myalias='open ~/.bash_profile'
 alias myaliass='source ~/.bash_profile'
 alias paa='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
-alias tm='source "/Volumes/Macintosh HD 2/it/bash/projects/task-manager/tm.sh"'
+alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
 
 
 
