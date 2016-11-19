@@ -7,7 +7,7 @@ alias aa='open ~/.bash_profile'
 alias aas='source ~/.bash_profile'
 alias myalias='open ~/.bash_profile'
 alias myaliass='source ~/.bash_profile'
-alias paa='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
+alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
 alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
 
 
@@ -84,7 +84,6 @@ source "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"
 #------------------------------
 # EXPORTS
 #------------------------------
-export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/pcre/bin:$PATH
 export PATH="/usr/local/libiconv/bin:$PATH"
 export PATH="/usr/local/nginx/sbin:$PATH"
@@ -92,3 +91,9 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:~/.vimpkg/bin"
 # http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
 export PATH="$PATH:/usr/local/mysql/bin"
+export PATH=/usr/local/bin:$PATH
+
+
+
+
+
