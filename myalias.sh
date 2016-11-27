@@ -57,6 +57,10 @@ alias melp='"/pathto/bash/projects/melp/melp.sh"'
 
 # resize firefox to a specific window size, useful for taking homogeneous screenshots
 alias ff='osascript "/pathto/mac/resize-firefox.scpt"'
+alias ss='osascript "/pathto/mac/resize-firefox.scpt" && screencapture -R1000,50,1300,1000 ~/Desktop/capture.png'
+
+
+
 
 #------------------------------
 # DIAGNOSE
