@@ -3,10 +3,8 @@ export PS1="\\$ "
 
 
 alias ll='ls -lArth'
-alias aa='open ~/.bash_profile'
-alias aas='source ~/.bash_profile'
-alias myalias='open ~/.bash_profile'
-alias myaliass='source ~/.bash_profile'
+alias aa='open "/pathto/bash/projects/myaliases/myalias.sh"'
+alias aas='source "/pathto/bash/projects/myaliases/myalias.sh"'
 alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
 alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
 
@@ -49,7 +47,6 @@ alias nconf='open "$nginxConfPath/nginx.conf"'
 
 
 
-
 #------------------------------
 # MAC
 #------------------------------
@@ -58,6 +55,8 @@ alias tmdown='cd "/pathto/misc_projects/timemachine-and-shutdown"; ./tmshutdown.
 alias kom='ssh kom'
 alias melp='"/pathto/bash/projects/melp/melp.sh"'
 
+# resize firefox to a specific window size, useful for taking homogeneous screenshots
+alias ff='osascript "/pathto/mac/resize-firefox.scpt"'
 
 #------------------------------
 # DIAGNOSE
