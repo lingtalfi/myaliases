@@ -20,6 +20,12 @@ alias vimrc='vim ~/.vimrc'
 
 
 
+#------------------------------
+# GENERAL
+#------------------------------
+# quick memo
+alias cc='open ~/current.txt'
+
 
 #------------------------------
 # WEB DEVELOPMENT
@@ -32,7 +38,6 @@ alias pstop='sudo killall php-fpm'
 alias pconf='open "/usr/local/etc/php/7.0"'
 
 # nginx
-
 nginxPath="/usr/local/Cellar/nginx/1.10.2_1"
 nginxConfPath="/usr/local/etc/nginx"
 
@@ -44,6 +49,12 @@ alias nsite='open "/pathto/server/nginx-notes/private/my-nginx-confs"'
 alias nlog='tail -f "$nginxPath/logs/error.log"'
 alias nlogg='tail -f "$nginxPath/logs/access.log"'
 alias nconf='open "$nginxConfPath/nginx.conf"'
+
+# nullos
+nullosPath="/pathto/php/projects/nullos-admin/app-nullos"
+alias nulp='tail -f -n 100 "$nullosPath/log/php.err.log"'
+alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
+
 
 
 
@@ -57,7 +68,7 @@ alias melp='"/pathto/bash/projects/melp/melp.sh"'
 
 # resize firefox to a specific window size, useful for taking homogeneous screenshots
 alias ff='osascript "/pathto/mac/resize-firefox.scpt"'
-alias ss='osascript "/pathto/mac/resize-firefox.scpt" && screencapture -R1000,50,1300,1000 ~/Desktop/capture.png'
+alias ss='osascript "/pathto/mac/resize-firefox.scpt"; sleep 1; a="/pathto/php/projects/nullos-admin/private/doc-screenshots/official/modules/crud-module/configure-list"; screencapture -R1000,50,1300,1000 "$a/capture.png"; open "$a"'
 
 
 
