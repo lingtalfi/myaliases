@@ -7,7 +7,10 @@ alias aa='open "/pathto/bash/projects/myaliases/myalias.sh"'
 alias aas='source "/pathto/bash/projects/myaliases/myalias.sh"'
 alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
 alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
+
+
 alias mmysql='/Applications/MAMP/Library/bin/mysql -uroot -proot'
+alias msite='open "/Applications/MAMP/conf/apache/extra"'
 
 
 alias hostt='open /etc/hosts'
