@@ -9,10 +9,6 @@ alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
 alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
 
 
-alias mmysql='/Applications/MAMP/Library/bin/mysql -uroot -proot'
-alias msite='open "/Applications/MAMP/conf/apache/extra"'
-
-
 alias hostt='open /etc/hosts'
 
 
@@ -21,6 +17,16 @@ alias hostt='open /etc/hosts'
 #------------------------------
 alias vimrc='vim ~/.vimrc'
 
+#------------------------------
+# MAMP
+#------------------------------
+alias mmysql='/Applications/MAMP/Library/bin/mysql -uroot -proot'
+alias msite='open "/Applications/MAMP/conf/apache/extra"'
+
+#------------------------------
+# GIT
+#------------------------------
+alias ginit='/pathto/bash/projects/ginit/ginit.sh'
 
 
 #------------------------------
