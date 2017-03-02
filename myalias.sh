@@ -27,6 +27,7 @@ alias msite='open "/Applications/MAMP/conf/apache/extra"'
 # GIT
 #------------------------------
 alias ginit='/pathto/bash/projects/ginit/ginit.sh'
+alias gitpull='git fetch --all; git reset --hard origin/master';
 
 
 #------------------------------
