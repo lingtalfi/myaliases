@@ -66,6 +66,11 @@ alias nulp='tail -f -n 100 "$nullosPath/log/php.err.log"'
 alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
 
 
+#------------------------------
+# KAMILLE
+#------------------------------
+alias kamillepack='php -f /myphp/kamille-installer-tool/www/pack.php'
+
 
 
 #------------------------------
