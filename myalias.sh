@@ -67,10 +67,9 @@ alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
 
 
 #------------------------------
-# MY WEB
+# KAMILLE
 #------------------------------
-alias kamillepack='php -f /myphp/kamille-installer-tool/www/pack.php'
-alias unipack='php -f /myphp/universe-naive-importer/www/pack.php'
+alias klog='tail -f -n 100 /myphp/kaminos/app/logs/kamille.log.txt'
 
 
 
