@@ -28,6 +28,7 @@ alias msite='open "/Applications/MAMP/conf/apache/extra"'
 #------------------------------
 alias ginit='/pathto/bash/projects/ginit/ginit.sh'
 alias gitpull='git fetch --all; git reset --hard origin/master';
+alias guu='git snap update; git pp';
 
 
 #------------------------------
@@ -70,6 +71,9 @@ alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
 # KAMILLE
 #------------------------------
 alias klog='tail -f -n 100 /myphp/kaminos/app/logs/kamille.log.txt'
+alias kwpack='php -f /mytasks/kamille/pack-widgets.php'
+alias kpack='php -f /mytasks/kamille/pack-modules.php'
+alias kam='cd /myphp/kaminos/app'
 
 
 
