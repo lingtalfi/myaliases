@@ -73,6 +73,8 @@ alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
 alias klog='tail -f -n 100 /myphp/kaminos/app/logs/kamille.log.txt'
 alias kwpack='php -f /mytasks/kamille/pack-widgets.php'
 alias kpack='php -f /mytasks/kamille/pack-modules.php'
+alias okwpack='open /mytasks/kamille/pack-widgets.php'
+alias okpack='open /mytasks/kamille/pack-modules.php'
 alias kam='cd /myphp/kaminos/app'
 
 
