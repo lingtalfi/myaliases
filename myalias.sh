@@ -75,8 +75,8 @@ alias kwpack='php -f /mytasks/kamille/pack-widgets.php'
 alias kpack='php -f /mytasks/kamille/pack-modules.php'
 alias okwpack='open /mytasks/kamille/pack-widgets.php'
 alias okpack='open /mytasks/kamille/pack-modules.php'
-alias kexx='php -f "/mytasks/kamille/prepareForExport.php" -- module'
-alias kwexx='php -f "/mytasks/kamille/prepareForExport.php" -- widget'
+alias kexx='php -f "/mytasks/kamille/prepareForExport.php" -- module; open /myphp/kamille-modules'
+alias kwexx='php -f "/mytasks/kamille/prepareForExport.php" -- widget; open /myphp/kamille-widgets'
 alias kam='cd /myphp/kaminos/app'
 
 
