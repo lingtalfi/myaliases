@@ -80,6 +80,7 @@ alias kexx='php -f "/mytasks/kamille/prepareForExport.php" -- module; open /myph
 alias kwexx='php -f "/mytasks/kamille/prepareForExport.php" -- widget; open /myphp/kamille-widgets'
 alias kam='cd /myphp/kaminos/app'
 alias prime='cd /myphp/prime/app'
+alias lee='cd /myphp/leaderfit/leaderfit'
 
 
 
