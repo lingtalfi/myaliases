@@ -99,7 +99,7 @@ alias melp='"/pathto/bash/projects/melp/melp.sh"'
 alias ff='osascript "/pathto/mac/resize-firefox.scpt"'
 alias ss='osascript "/pathto/mac/resize-firefox.scpt"; sleep 1; a="/pathto/php/projects/nullos-admin/private/doc-screenshots/official/modules/crud-module/configure-list"; screencapture -R1000,50,1300,1000 "$a/capture.png"; open "$a"'
 
-
+alias subl='"/Applications/Sublime Text.app/Contents/MacOS/Sublime Text" '
 
 
 #------------------------------
@@ -135,7 +135,6 @@ export PATH="$PATH:~/.vimpkg/bin"
 # http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
 export PATH="$PATH:/usr/local/mysql/bin"
 export PATH=/usr/local/bin:$PATH
-
 
 
 
