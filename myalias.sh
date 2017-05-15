@@ -83,6 +83,7 @@ alias prime='cd /myphp/prime/app'
 alias lee='cd /myphp/leaderfit/leaderfit'
 
 alias startt='cd /myphp/universe; uni importall -f; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx;'
+alias leeback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > ~/Downloads/kamille.sql'
 
 
 
