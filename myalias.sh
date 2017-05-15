@@ -82,7 +82,7 @@ alias kam='cd /myphp/kaminos/app'
 alias prime='cd /myphp/prime/app'
 alias lee='cd /myphp/leaderfit/leaderfit'
 
-alias startt='cd /myphp/universe; uni importall -f; cd /myphp/kamille-modules; kamille importall -f; cd /myphp/kamille-widgets; kamille wimportall -f;'
+alias startt='cd /myphp/universe; uni importall -f; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx;'
 
 
 
