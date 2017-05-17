@@ -83,7 +83,7 @@ alias prime='cd /myphp/prime/app'
 alias lee='cd /myphp/leaderfit/leaderfit'
 
 alias startt='cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
-alias leeback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > ~/Downloads/kamille.sql'
+alias leeback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql; open /myphp/leaderfit/leaderfit/store/Ekom/database;'
 alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 
 
