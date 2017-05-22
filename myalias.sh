@@ -82,7 +82,7 @@ alias kam='cd /myphp/kaminos/app'
 alias prime='cd /myphp/prime/app'
 alias lee='cd /myphp/leaderfit/leaderfit'
 
-alias startt='cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
+alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
 alias lbackup='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql; open /myphp/leaderfit/leaderfit/store/Ekom/database;'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
