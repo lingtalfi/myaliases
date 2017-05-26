@@ -89,7 +89,7 @@ alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 
 alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator.php'
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
-
+alias cca='rm -r /myphp/leaderfit/leaderfit/cache'
 
 
 #------------------------------
