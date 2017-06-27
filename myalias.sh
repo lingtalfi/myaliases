@@ -68,6 +68,11 @@ alias nulp='tail -f -n 100 "$nullosPath/log/php.err.log"'
 alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
 
 
+# webwizard
+alias wwiz='bashman -h "/pathto/bash/projects/webmaster-wizard/home" -c myconf -v'
+
+
+
 #------------------------------
 # KAMILLE
 #------------------------------
@@ -97,11 +102,17 @@ alias ksql='/Applications/MAMP/Library/bin/mysql --user=root --password=root --d
 
 
 #------------------------------
+# Lee
+#------------------------------
+alias leepush='cd /myphp/leaderfit/leaderfit; git snap update; git ppv'
+
+#------------------------------
 # MAC
 #------------------------------
 # https://github.com/lingtalfi/Time-machine-and-shutdown
 alias tmdown='cd "/pathto/misc_projects/timemachine-and-shutdown"; ./tmshutdown.sh'
 alias kom='ssh kom'
+alias vps='ssh vps'
 alias melp='"/pathto/bash/projects/melp/melp.sh"'
 
 # resize firefox to a specific window size, useful for taking homogeneous screenshots
