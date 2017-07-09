@@ -95,6 +95,7 @@ alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 alias slog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.sql.log.txt'
 
 alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator.php'
+alias xiaoc='php -f /your/kamille_app/scripts/xiao-generator-ekom-card-combination.php'
 alias xiaop='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-peipei.php'
 alias xiaot='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-training.php'
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
