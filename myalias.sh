@@ -91,9 +91,11 @@ alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; c
 alias updatee='uni update; cd /myphp/kamille-modules; kamille updateall -xx; cd /myphp/kamille-widgets; kamille wupdateall -xx; cd /myphp/universe; uni updateall;'
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
+alias plog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/php.log.txt'
 alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 alias slog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.sql.log.txt'
 
+alias xiaoa='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-thisapp.php'
 alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator.php'
 alias xiaoc='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-card-combination.php'
 alias xiaop='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-peipei.php'
