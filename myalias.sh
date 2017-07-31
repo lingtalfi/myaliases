@@ -110,6 +110,7 @@ alias ksql='/Applications/MAMP/Library/bin/mysql --user=root --password=root --d
 # Lee
 #------------------------------
 alias leepush='cd /myphp/leaderfit/leaderfit; git snap update; git ppv'
+alias boxpush='cd /myphp/leaderbox; git snap update; git pp'
 
 #------------------------------
 # MAC
