@@ -89,7 +89,7 @@ alias lee='cd /myphp/leaderfit/leaderfit'
 alias box='cd /myphp/leaderbox'
 
 alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
-alias updatee='cd /pathto/bash/projects/myaliases; gitpull; uni update; cd /myphp/kamille-modules; kamille updateall -xx; cd /myphp/kamille-widgets; kamille wupdateall -xx; cd /myphp/universe; uni updateall;'
+alias updatee='box; gitpull; cd /pathto/bash/projects/myaliases; gitpull; uni update; cd /myphp/kamille-modules; kamille updateall -xx; cd /myphp/kamille-widgets; kamille wupdateall -xx; cd /myphp/universe; uni updateall;'
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias plog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/php.log.txt'
