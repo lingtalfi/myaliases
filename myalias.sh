@@ -96,6 +96,7 @@ alias plog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/php.log.txt'
 alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 alias slog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.sql.log.txt'
 alias dlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/debug.log.txt'
+alias clog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/cache.log.txt'
 
 alias xiaoa='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-thisapp.php'
 alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator.php'
