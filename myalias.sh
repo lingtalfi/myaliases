@@ -117,7 +117,7 @@ alias sorm='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/save-orm-generat
 alias leepush='cd /myphp/leaderfit/leaderfit; git snap update; git ppv'
 alias boxpush='cd /myphp/leaderbox; git snap update; git pp'
 alias biggreen='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/big-green.php'
-
+alias rebuild='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/cron/rebuild-cache.php'
 
 
 
