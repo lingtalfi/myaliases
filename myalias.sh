@@ -86,6 +86,7 @@ alias kwexx='php -f "/mytasks/kamille/prepareForExport.php" -- widget; open /myp
 alias kam='cd /myphp/kaminos/app'
 alias prime='cd /myphp/prime/app'
 alias lee='cd /myphp/leaderfit/leaderfit'
+alias ekomm='cd /myphp/kamille-modules/Ekom'
 alias box='cd /myphp/leaderbox'
 
 alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
