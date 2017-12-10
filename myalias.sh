@@ -42,6 +42,7 @@ alias cc='open ~/current.txt'
 #------------------------------
 # WEB DEVELOPMENT
 #------------------------------
+alias wk='wkhtmltopdf'
 alias wstart='sudo nginx; sudo php-fpm'
 
 # php-fpm
