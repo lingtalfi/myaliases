@@ -107,6 +107,7 @@ alias xiaoc='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-card-
 alias xiaop='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-peipei.php'
 alias xiaos='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-estimate.php'
 alias xiaot='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-training.php'
+alias xiaof='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-fishmailer.php'
 alias xiaoph='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-user-product-history.php'
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
