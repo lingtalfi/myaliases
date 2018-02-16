@@ -102,7 +102,7 @@ alias clog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/cache.log.txt'
 alias pagelog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/page-perf.log.txt'
 
 alias xiaoa='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-thisapp.php'
-alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-super-generator.php'
+alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator.php'
 alias xiaoc='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-card-combination.php'
 alias xiaop='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-peipei.php'
 alias xiaos='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-estimate.php'
