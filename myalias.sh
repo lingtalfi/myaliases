@@ -40,6 +40,15 @@ alias cc='open ~/current.txt'
 
 
 #------------------------------
+# DOCSIFY
+#------------------------------
+alias dock='docsify serve /myphp/universe/planets/Kamille/doc/official'
+alias docn='docsify serve /myphp/kamille-modules/NullosAdmin/doc/official'
+alias doce='docsify serve /myphp/kamille-modules/Ekom/doc/official'
+
+
+
+#------------------------------
 # WEB DEVELOPMENT
 #------------------------------
 alias wk='wkhtmltopdf'
