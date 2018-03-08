@@ -101,7 +101,7 @@ alias box='cd /myphp/leaderbox'
 
 alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
 alias updatee='cd /myphp/phpstorm-mysettings; git pull; box; gitpull; cd /pathto/bash/projects/myaliases; gitpull; uni update; cd /myphp/kamille-modules; kamille updateall -xx; cd /myphp/kamille-widgets; kamille wupdateall -xx; cd /myphp/universe; uni updateall;'
-alias pushh='cd /myphp/universe/planets/Kamille; guu; cd /myphp/leaderfit/leaderfit; guu; cd /myphp/kamille-modules/NullosAdmin; guu; cd /myphp/kamille-modules/Ekom; guu';
+alias pushh='lback; cd /myphp/universe/planets/Kamille; guu; cd /myphp/leaderfit/leaderfit; guu; cd /myphp/kamille-modules/NullosAdmin; guu; cd /myphp/kamille-modules/Ekom; guu';
 
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
