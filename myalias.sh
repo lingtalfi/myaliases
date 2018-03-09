@@ -104,7 +104,7 @@ alias updatee='cd /myphp/phpstorm-mysettings; git pull; box; gitpull; cd /pathto
 
 
 # echo -e "\033[0;31mokok\033[0m"
-alias pushh='echo "saving db"; lback; echo "pushing planet Kamille"; cd /myphp/universe/planets/Kamille; guu; echo "pushing leaderfit app"; cd /myphp/leaderfit/leaderfit; guu; echo "pushing NullosAdmin module";cd /myphp/kamille-modules/NullosAdmin; guu; echo "pushing Ekom module"; cd /myphp/kamille-modules/Ekom; guu';
+alias pushh='echo -e "\033[0;32msaving db\033[0m"; lback; echo -e "\033[0;32mpushing planet Kamille\033[0m"; cd /myphp/universe/planets/Kamille; guu; echo -e "\033[0;32mpushing leaderfit app\033[0m"; cd /myphp/leaderfit/leaderfit; guu; echo -e "\033[0;32mpushing NullosAdmin module\033[0m";cd /myphp/kamille-modules/NullosAdmin; guu; echo -e "\033[0;32mpushing Ekom module\033[0m"; cd /myphp/kamille-modules/Ekom; guu';
 
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
