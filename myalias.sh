@@ -3,14 +3,7 @@ export PS1="\\$ "
 
 
 alias ll='ls -lArth'
-alias aa='open "/pathto/bash/projects/myaliases/myalias.sh"'
-alias aas='source "/pathto/bash/projects/myaliases/myalias.sh"'
-alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
-alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
-
-
 alias hostt='open /etc/hosts'
-
 
 #------------------------------
 # VIM
@@ -32,11 +25,18 @@ alias guu='git snap update; git pp';
 alias gsu='php -f /myphp/git-smart-update/smart-update.php'
 
 
+
+
 #------------------------------
 # GENERAL
 #------------------------------
 # quick memo
 alias cc='open ~/current.txt'
+alias aa='open "/pathto/bash/projects/myaliases/myalias.sh"'
+alias aas='source "/pathto/bash/projects/myaliases/myalias.sh"'
+alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
+alias aau='cd /pathto/bash/projects/myaliases; guu'
+alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
 
 
 #------------------------------
@@ -127,6 +127,8 @@ alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
 alias ksql='/Applications/MAMP/Library/bin/mysql --user=root --password=root --database=kamille --execute="DROP DATABASE if exists kamille; CREATE DATABASE kamille character set utf8 collate utf8_general_ci;"; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/Ekom/assets/db/ekom-kamille.sql; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/PeiPei/assets/db/peipei.sql; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/TrainingProducts/assets/db/training_products.sql;'
 alias sorm='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/save-orm-generator.php'
+
+alias morphic='php -f "/myphp/leaderfit/leaderfit/www/morphic-generator.php"'
 
 
 #------------------------------
