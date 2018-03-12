@@ -119,6 +119,7 @@ function doThePull {
 alias pulll=doThePull
 
 
+
 function doThePush {
 	myprint "pushing phpstorm settings"; cd "/myphp/phpstorm-mysettings"; guu;
 	myprint "pushing aliases"; cd "/pathto/bash/projects/myaliases"; guu; 

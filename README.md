@@ -21,3 +21,15 @@ The simplest thing to do is probably copy paste the myalias.sh file content (in 
 Good luck.
 
 
+
+Update
+------------
+2018-03-12
+
+my aliases are like my indispensable toolkit that I bring everywhere I work (well, just home and work basically, but still).
+So now I extend the concept to some servers:
+
+in `ling-server-aliases.sh` file, you will find my personal shortcuts of the moment for a server.
+
+
+
