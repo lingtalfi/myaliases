@@ -100,11 +100,11 @@ alias ekomm='cd /myphp/kamille-modules/Ekom'
 alias box='cd /myphp/leaderbox'
 
 alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
-alias updatee='cd /myphp/phpstorm-mysettings; git pull; box; gitpull; cd /pathto/bash/projects/myaliases; gitpull; uni update; cd /myphp/kamille-modules; kamille updateall -xx; cd /myphp/kamille-widgets; kamille wupdateall -xx; cd /myphp/universe; uni updateall;'
+alias updatee='echo -e "\033[0;32mpulling phpstorm settings\033[0m";cd /myphp/phpstorm-mysettings; git pull; echo -e "\033[0;32mpulling leaderbox\033[0m";box; gitpull; echo -e "\033[0;32mpulling aliases\033[0m";cd /pathto/bash/projects/myaliases; gitpull; echo -e "\033[0;32mupdating uni tool\033[0m";uni update; echo -e "\033[0;32mpulling all Kamille modules\033[0m";cd /myphp/kamille-modules; kamille updateall -xx; echo -e "\033[0;32mpulling all Kamille widgets\033[0m";cd /myphp/kamille-widgets; kamille wupdateall -xx; echo -e "\033[0;32mpulling all planets from universe\033[0m";cd /myphp/universe; uni updateall;'
 
 
 # echo -e "\033[0;31mokok\033[0m"
-alias pushh='echo -e "\033[0;32msaving db\033[0m"; lback; echo -e "\033[0;32mpushing planet Kamille\033[0m"; cd /myphp/universe/planets/Kamille; guu; echo -e "\033[0;32mpushing leaderfit app\033[0m"; cd /myphp/leaderfit/leaderfit; guu; echo -e "\033[0;32mpushing NullosAdmin module\033[0m";cd /myphp/kamille-modules/NullosAdmin; guu; echo -e "\033[0;32mpushing Ekom module\033[0m"; cd /myphp/kamille-modules/Ekom; guu';
+alias pushh='echo -e "\033[0;32mpushing aliases\033[0m"; cd /pathto/bash/projects/myaliases; gitpull; echo -e "\033[0;32msaving db\033[0m"; lback; echo -e "\033[0;32mpushing planet Kamille\033[0m"; cd /myphp/universe/planets/Kamille; guu; echo -e "\033[0;32mpushing leaderfit app\033[0m"; cd /myphp/leaderfit/leaderfit; guu; echo -e "\033[0;32mpushing NullosAdmin module\033[0m";cd /myphp/kamille-modules/NullosAdmin; guu; echo -e "\033[0;32mpushing Ekom module\033[0m"; cd /myphp/kamille-modules/Ekom; guu';
 
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
