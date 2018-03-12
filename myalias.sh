@@ -99,12 +99,41 @@ alias lee='cd /myphp/leaderfit/leaderfit'
 alias ekomm='cd /myphp/kamille-modules/Ekom'
 alias box='cd /myphp/leaderbox'
 
-alias startt='uni update; cd /myphp/kamille-modules; kamille importall -f -xx; cd /myphp/kamille-widgets; kamille wimportall -f -xx; cd /myphp/universe; uni importall -f;'
-alias updatee='echo -e "\033[0;32mpulling phpstorm settings\033[0m";cd /myphp/phpstorm-mysettings; git pull; echo -e "\033[0;32mpulling leaderbox\033[0m";box; gitpull; echo -e "\033[0;32mpulling aliases\033[0m";cd /pathto/bash/projects/myaliases; gitpull; echo -e "\033[0;32mupdating uni tool\033[0m";uni update; echo -e "\033[0;32mpulling all Kamille modules\033[0m";cd /myphp/kamille-modules; kamille updateall -xx; echo -e "\033[0;32mpulling all Kamille widgets\033[0m";cd /myphp/kamille-widgets; kamille wupdateall -xx; echo -e "\033[0;32mpulling all planets from universe\033[0m";cd /myphp/universe; uni updateall;'
 
+function myprint {
+	echo -e "\033[0;32m$1\033[0m"
+}
+
+function doThePull {
+	myprint "pulling phpstorm settings"; cd "/myphp/phpstorm-mysettings"; gitpull;
+	myprint "pulling aliases"; cd "/pathto/bash/projects/myaliases"; gitpull;
+	myprint "pulling leaderbox"; box; gitpull;
+	myprint "updating uni tool"; uni update;
+	myprint "pulling all Kamille modules"; cd "/myphp/kamille-modules"; kamille updateall -xx;
+	myprint "pulling all Kamille widgets"; cd "/myphp/kamille-widgets"; kamille wupdateall -xx;
+	myprint "pulling all planets from universe"; cd "/myphp/universe"; uni updateall;
+ 	myprint "pulling lee app"; lee; gitpull;
+ 	myprint "restoring kamille db"; lrestore;
+}
+
+alias pulll=doThePull
+
+
+function doThePush {
+	myprint "pushing phpstorm settings"; cd "/myphp/phpstorm-mysettings"; guu;
+	myprint "pushing aliases"; cd "/pathto/bash/projects/myaliases"; guu; 
+	
+	myprint "pushing NullosAdmin module";cd "/myphp/kamille-modules/NullosAdmin"; guu; 
+	myprint "pushing Ekom module"; cd "/myphp/kamille-modules/Ekom"; guu
+	myprint "pushing planet Kamille"; cd "/myphp/universe/planets/Kamille"; guu;
+
+	myprint "saving kamille db"; lback; 
+	myprint "pushing leaderfit app"; cd "/myphp/leaderfit/leaderfit"; guu;
+
+}
 
 # echo -e "\033[0;31mokok\033[0m"
-alias pushh='echo -e "\033[0;32mpushing aliases\033[0m"; cd /pathto/bash/projects/myaliases; gitpull; echo -e "\033[0;32msaving db\033[0m"; lback; echo -e "\033[0;32mpushing planet Kamille\033[0m"; cd /myphp/universe/planets/Kamille; guu; echo -e "\033[0;32mpushing leaderfit app\033[0m"; cd /myphp/leaderfit/leaderfit; guu; echo -e "\033[0;32mpushing NullosAdmin module\033[0m";cd /myphp/kamille-modules/NullosAdmin; guu; echo -e "\033[0;32mpushing Ekom module\033[0m"; cd /myphp/kamille-modules/Ekom; guu';
+alias pushh=doThePush
 
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
