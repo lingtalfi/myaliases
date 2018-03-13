@@ -100,6 +100,14 @@ alias ekomm='cd /myphp/kamille-modules/Ekom'
 alias box='cd /myphp/leaderbox'
 
 
+
+alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
+alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
+
+
+
+
+
 function myprint {
 	echo -e "\033[0;32m$1\033[0m"
 }
@@ -136,8 +144,10 @@ function doThePush {
 # echo -e "\033[0;31mokok\033[0m"
 alias pushh=doThePush
 
-alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
-alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
+
+
+
+
 alias plog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/php.log.txt'
 alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 alias slog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.sql.log.txt'
