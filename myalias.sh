@@ -175,6 +175,7 @@ alias morphic='php -f "/myphp/leaderfit/leaderfit/www/morphic-generator.php"'
 # Lee
 #------------------------------
 alias leepush='cd /myphp/leaderfit/leaderfit; git snap update; git ppv'
+alias prepush='cd /myphp/leaderfit/leaderfit; git snap update; git pppre'
 alias boxpush='cd /myphp/leaderbox; git snap update; git pp'
 alias biggreen='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/big-green.php'
 alias rebuild='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/cron/rebuild-cache.php'
@@ -188,6 +189,7 @@ alias rebuild='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/cron/rebuild-
 alias tmdown='cd "/pathto/misc_projects/timemachine-and-shutdown"; ./tmshutdown.sh'
 alias kom='ssh kom'
 alias vps='ssh vps'
+alias prep='ssh preprod'
 alias melp='"/pathto/bash/projects/melp/melp.sh"'
 
 # resize firefox to a specific window size, useful for taking homogeneous screenshots
