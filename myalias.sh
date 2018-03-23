@@ -119,7 +119,7 @@ function doThePull {
 	myprint "updating uni tool"; uni update;
 	myprint "pulling all Kamille modules"; cd "/myphp/kamille-modules"; kamille updateall -xx;
 	myprint "pulling all Kamille widgets"; cd "/myphp/kamille-widgets"; kamille wupdateall -xx;
-	myprint "pulling all planets from universe"; cd "/myphp/universe"; uni updateall;
+	myprint "reimporting all universe"; cd "/myphp/universe"; uni importall -f;
  	myprint "pulling lee app"; lee; gitpull;
  	myprint "restoring kamille db"; lrestore;
 }
@@ -164,7 +164,7 @@ alias xiaof='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-fishmailer
 alias xiaoph='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-user-product-history.php'
 
 alias xiaop='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=PeiPei --prefix=pei_'
-alias xiaocron='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomCronBot --prefix=ekcron_'
+alias xiaocron='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=ApplicationCronBot --prefix=appcron_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'

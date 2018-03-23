@@ -35,12 +35,13 @@ function doThePull {
     myprint "updating kit (kamille installer tool)"; cd "/myphp/kamille-installer-tool"; gitpull;
     myprint "pulling all Kamille modules"; cd "/myphp/kamille-modules"; kamille updateall -xx;
     #myprint "pulling all Kamille widgets"; cd "/myphp/kamille-widgets"; kamille wupdateall -xx;
-    myprint "pulling all planets from universe"; cd "/myphp/universe"; uni updateall;
+    myprint "reimporting all planets from universe"; cd "/myphp/universe"; uni importall -f;
 
     # below does not work: fatal: ambiguous argument 'origin/master': unknown revision or path not in the working tree.
+    # fix it by adding a remote: git remote add origin https://github.com/lingtalfi/leaderfit.git
     # instead, do a leepush from local...
-    #myprint "pulling lee app"; cd /myphp/leaderfit; gitpull;
-    #myprint "restoring kamille db"; lrestore;
+    myprint "pulling lee app"; cd /myphp/leaderfit; gitpull;
+    myprint "restoring kamille db"; lrestore;
 
 
 }
