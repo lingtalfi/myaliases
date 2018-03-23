@@ -132,6 +132,7 @@ function doThePush {
 	myprint "pushing phpstorm settings"; cd "/myphp/phpstorm-mysettings"; guu;
 	myprint "pushing aliases"; cd "/pathto/bash/projects/myaliases"; guu; 
 	
+	myprint "pushing Application module";cd "/myphp/kamille-modules/Application"; guu; 
 	myprint "pushing NullosAdmin module";cd "/myphp/kamille-modules/NullosAdmin"; guu; 
 	myprint "pushing Ekom module"; cd "/myphp/kamille-modules/Ekom"; guu
 	myprint "pushing planet Kamille"; cd "/myphp/universe/planets/Kamille"; guu;
