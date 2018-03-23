@@ -158,12 +158,14 @@ alias pagelog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/page-perf.log.txt'
 alias xiaoa='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-thisapp.php'
 alias xiaoo='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator.php'
 alias xiaoc='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-card-combination.php'
-alias xiaop='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-peipei.php'
 alias xiaos='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-estimate.php'
 alias xiaot='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-training.php'
 alias xiaof='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-fishmailer.php'
 alias xiaoph='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-user-product-history.php'
+
+alias xiaop='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=PeiPei --prefix=pei_'
 alias xiaocron='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomCronBot --prefix=ekcron_'
+
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
 alias ksql='/Applications/MAMP/Library/bin/mysql --user=root --password=root --database=kamille --execute="DROP DATABASE if exists kamille; CREATE DATABASE kamille character set utf8 collate utf8_general_ci;"; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/Ekom/assets/db/ekom-kamille.sql; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/PeiPei/assets/db/peipei.sql; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/TrainingProducts/assets/db/training_products.sql;'
@@ -232,7 +234,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:~/.vimpkg/bin"
 # http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
 export PATH="$PATH:/usr/local/mysql/bin"
-export PATH=/usr/local/bin:$PATH
+export PATH="/usr/local/bin:$PATH"
 
 
 
