@@ -96,6 +96,7 @@ alias kwexx='php -f "/mytasks/kamille/prepareForExport.php" -- widget; open /myp
 alias kam='cd /myphp/kaminos/app'
 alias prime='cd /myphp/prime/app'
 alias lee='cd /myphp/leaderfit/leaderfit'
+alias kit='cd /myphp/kamille-installer-tool'
 alias ekomm='cd /myphp/kamille-modules/Ekom'
 alias box='cd /myphp/leaderbox'
 
@@ -117,6 +118,7 @@ function doThePull {
 	myprint "pulling aliases"; cd "/pathto/bash/projects/myaliases"; gitpull;
 	myprint "pulling leaderbox"; box; gitpull;
 	myprint "updating uni tool"; uni update;
+	myprint "updating kit"; cd "/myphp/kamille-installer-tool"; gitpull;
 	myprint "pulling all Kamille modules"; cd "/myphp/kamille-modules"; kamille updateall -xx;
 	myprint "pulling all Kamille widgets"; cd "/myphp/kamille-widgets"; kamille wupdateall -xx;
 	myprint "reimporting all universe"; cd "/myphp/universe"; uni importall -f;
