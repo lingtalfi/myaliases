@@ -121,7 +121,7 @@ function doThePull {
 	myprint "updating kit"; cd "/myphp/kamille-installer-tool"; gitpull;
 	myprint "pulling all Kamille modules"; cd "/myphp/kamille-modules"; kamille updateall -xx;
 	myprint "pulling all Kamille widgets"; cd "/myphp/kamille-widgets"; kamille wupdateall -xx;
-	myprint "reimporting all universe"; cd "/myphp/universe"; uni importall -f;
+	myprint "reimporting all universe"; cd "/myphp/universe"; uni updateall;
  	myprint "pulling lee app"; lee; gitpull;
  	myprint "restoring kamille db"; lrestore;
 }
@@ -138,6 +138,7 @@ function doThePush {
 	myprint "pushing NullosAdmin module";cd "/myphp/kamille-modules/NullosAdmin"; guu; 
 	myprint "pushing Ekom module"; cd "/myphp/kamille-modules/Ekom"; guu
 	myprint "pushing planet Kamille"; cd "/myphp/universe/planets/Kamille"; guu;
+	myprint "pushing planet GuiAdminTable"; cd "/myphp/universe/planets/GuiAdminTable"; guu;
 
 	myprint "saving kamille db"; lback; 
 	myprint "pushing leaderfit app"; cd "/myphp/leaderfit/leaderfit"; guu;
