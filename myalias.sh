@@ -169,13 +169,17 @@ alias xiaoph='php -f /myphp/leaderfit/leaderfit/scripts/xiao-generator-ekom-user
 
 alias xiaop='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=PeiPei --prefix=pei_'
 alias xiaocron='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=ApplicationCronBot --prefix=appcron_'
+alias xiaotracker='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomUserTracker --prefix=eut_'
+alias xiaofsearch='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomFastSearch --prefix=ekfs_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
 alias ksql='/Applications/MAMP/Library/bin/mysql --user=root --password=root --database=kamille --execute="DROP DATABASE if exists kamille; CREATE DATABASE kamille character set utf8 collate utf8_general_ci;"; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/Ekom/assets/db/ekom-kamille.sql; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/PeiPei/assets/db/peipei.sql; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/class-modules/TrainingProducts/assets/db/training_products.sql;'
 alias sorm='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/save-orm-generator.php'
 
-alias morphic='php -f "/myphp/leaderfit/leaderfit/www/morphic-generator.php" --'
+
+alias morphic='php -f "/myphp/leaderfit/leaderfit/scripts/modules/ApplicationMorphicGenerator/morphic-generator.php" --'
+alias morphic_trans='php -f "/myphp/leaderfit/leaderfit/scripts/modules/ApplicationMorphicGenerator/morphic-lingfrench-translation.php" --'
 
 
 #------------------------------
