@@ -12,8 +12,8 @@ dbPass=root
 dbUserName=root
 
 
-alias aa='vim /home/ling/ling-server-aliases.sh'
-alias aas='source /home/ling/ling-server-aliases.sh'
+alias aa='vim /home/ling/tools/ling-server-aliases.sh'
+alias aas='source /home/ling/tools/ling-server-aliases.sh'
 alias gitpull='git fetch --all; git reset --hard origin/master';
 
 
