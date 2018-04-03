@@ -16,6 +16,10 @@ alias aa='vim /home/ling/tools/ling-server-aliases.sh'
 alias aas='source /home/ling/tools/ling-server-aliases.sh'
 alias gitpull='git fetch --all; git reset --hard origin/master';
 
+# apache
+alias ar='sudo systemctl restart apache2'
+alias alog='sudo tail -f -n100 /var/log/apache2/ling/all.log'
+
 
 # my kamille app specific
 alias lback='/usr/bin/mysqldump -u $dbUserName -p$dbPass $dbName > /myphp/leaderfit/store/Ekom/database/kamille.sql'
