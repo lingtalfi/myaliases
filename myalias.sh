@@ -134,9 +134,18 @@ function doThePush {
 	myprint "pushing phpstorm settings"; cd "/myphp/phpstorm-mysettings"; guu;
 	myprint "pushing aliases"; cd "/pathto/bash/projects/myaliases"; guu; 
 	
+
 	myprint "pushing Application module";cd "/myphp/kamille-modules/Application"; guu; 
-	myprint "pushing NullosAdmin module";cd "/myphp/kamille-modules/NullosAdmin"; guu; 
+	myprint "pushing Authenticate module";cd "/myphp/kamille-modules/Authenticate"; guu; 
+	myprint "pushing AutoAdmin module";cd "/myphp/kamille-modules/AutoAdmin"; guu; 
+	myprint "pushing Connexion module";cd "/myphp/kamille-modules/Connexion"; guu; 
+	myprint "pushing Core module";cd "/myphp/kamille-modules/Core"; guu; 
+	myprint "pushing DataTable module";cd "/myphp/kamille-modules/DataTable"; guu; 
 	myprint "pushing Ekom module"; cd "/myphp/kamille-modules/Ekom"; guu
+	myprint "pushing NullosAdmin module";cd "/myphp/kamille-modules/NullosAdmin"; guu; 
+	myprint "pushing UploadProfile module";cd "/myphp/kamille-modules/UploadProfile"; guu; 
+
+
 	myprint "pushing planet Kamille"; cd "/myphp/universe/planets/Kamille"; guu;
 	myprint "pushing planet GuiAdminTable"; cd "/myphp/universe/planets/GuiAdminTable"; guu;
 
