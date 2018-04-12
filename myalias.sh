@@ -177,6 +177,7 @@ alias xiaoekfs='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-g
 alias xiaofm='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=FishMailer --prefix=fm_'
 alias xiaoek='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Ekom --prefix=ek_'
 alias xiaoect='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomCartTracker --prefix=ect_'
+alias xiaoapp='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=ThisApp --prefix=app_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
