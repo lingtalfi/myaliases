@@ -249,6 +249,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:~/.vimpkg/bin"
 # http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
 export PATH="$PATH:/usr/local/mysql/bin"
+export PATH="/Applications/MAMP/Library/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 
