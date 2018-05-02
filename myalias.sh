@@ -104,6 +104,7 @@ alias box='cd /myphp/leaderbox'
 
 alias lback='/Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
+alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
 
 
 
