@@ -134,8 +134,12 @@ alias pulll=doThePull
 
 
 function saveDatabase {
+	# myprint "saving kamille db"; lback; 
+	# myprint "splitting kamille db into chunk files"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; split -b 50000000 kamille.sql kamille.sql.;
+
 	myprint "saving kamille db"; lback; 
-	myprint "splitting kamille db into chunk files"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; split -b 50000000 kamille.sql kamille.sql.;
+	myprint "zipping db"; zip -r kamille.sql.zip kamille.sql; 
+	
 
 }
 
@@ -172,7 +176,13 @@ alias pushh=doThePush
 
 
 
+function doTheTestPush {
+	myprint "saving kamille db"; lback; 
+	myprint "zipping db"; zip -r kamille.sql.zip kamille.sql; 
+	myprint "removing kamille.sql"; rm kamille.sql
+}
 
+alias testpush=doTheTestPush
 
 
 alias plog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/php.log.txt'
