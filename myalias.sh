@@ -152,6 +152,9 @@ function doThePush {
 
 	myprint "saving kamille db"; lback; 
 	myprint "pushing leaderfit app"; cd "/myphp/leaderfit/leaderfit"; guu;
+	
+	
+	myprint "now pushing to the preprod"; prepush; 
 
 }
 
