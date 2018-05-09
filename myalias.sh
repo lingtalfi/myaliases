@@ -138,7 +138,7 @@ function saveDatabase {
 # myprint "splitting kamille db into chunk files"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; split -b 50000000 kamille.sql kamille.sql.;
 
 	myprint "saving kamille db"; lback; 
-	myprint "zipping db"; zip -r kamille.sql.zip kamille.sql; 
+	myprint "zipping db"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql; 
 	
 
 }
@@ -163,7 +163,6 @@ function doThePush {
 	myprint "pushing planet GuiAdminTable"; cd "/myphp/universe/planets/GuiAdminTable"; guu;
 
 	saveDatabase;
-	myprint "sleeping 3 seconds for zipping to complete"; sleep 3;
 	myprint "removing too heavy kamille.sql file for github"; rm kamille.sql
 	myprint "pushing leaderfit app"; cd "/myphp/leaderfit/leaderfit"; guu;
 	
