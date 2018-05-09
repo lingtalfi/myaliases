@@ -132,6 +132,13 @@ alias pulll=doThePull
 
 
 
+
+function saveDatabase {
+	myprint "saving kamille db"; lback; 
+	myprint "splitting kamille db into chunk files"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; split -b 50000000 kamille.sql kamille.sql.;
+
+}
+
 function doThePush {
 	myprint "pushing phpstorm settings"; cd "/myphp/phpstorm-mysettings"; guu;
 	myprint "pushing aliases"; cd "/pathto/bash/projects/myaliases"; guu; 
@@ -151,9 +158,9 @@ function doThePush {
 	myprint "pushing planet Kamille"; cd "/myphp/universe/planets/Kamille"; guu;
 	myprint "pushing planet GuiAdminTable"; cd "/myphp/universe/planets/GuiAdminTable"; guu;
 
-	myprint "saving kamille db"; lback; 
+	saveDatabase;
+	myprint "removing too heavy kamille.sql file for github"; rm kamille.sql
 	myprint "pushing leaderfit app"; cd "/myphp/leaderfit/leaderfit"; guu;
-	
 	
 	myprint "now pushing to the preprod"; prepush; 
 
@@ -161,6 +168,8 @@ function doThePush {
 
 # echo -e "\033[0;31mokok\033[0m"
 alias pushh=doThePush
+
+
 
 
 
