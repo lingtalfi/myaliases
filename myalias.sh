@@ -124,7 +124,8 @@ function doThePull {
 	myprint "pulling all Kamille widgets"; cd "/myphp/kamille-widgets"; kamille wupdateall -xx;
 	myprint "reimporting all universe"; cd "/myphp/universe"; uni updateall;
  	myprint "pulling lee app"; lee; gitpull;
- 	myprint "restoring kamille db"; lrestore;
+ 	# now we need to get the database from elsewhere (too heavy for github)
+ 	# myprint "restoring kamille db"; lrestore;
 }
 
 alias pulll=doThePull
