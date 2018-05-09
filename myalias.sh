@@ -163,7 +163,7 @@ function doThePush {
 	myprint "pushing planet GuiAdminTable"; cd "/myphp/universe/planets/GuiAdminTable"; guu;
 
 	saveDatabase;
-	myprint "removing too heavy kamille.sql file for github"; rm kamille.sql
+	myprint "removing too heavy kamille.sql file for github"; git rm kamille.sql; rm kamille.sql
 	myprint "pushing leaderfit app"; cd "/myphp/leaderfit/leaderfit"; guu;
 	
 	myprint "now pushing to the preprod"; prepush; 
