@@ -107,6 +107,24 @@ alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /m
 alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
 
 
+#------------------------------
+# Lee
+#------------------------------
+
+function doPrepush {
+	myprint "Starting prepush routine...";
+	myprint "saving kamille db"; lback; 
+	myprint "zipping db"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql; 
+	myprint "pushing files to the preprod server"; cd /myphp/leaderfit/leaderfit; git snap update; git pppre;
+	myprint "Endof prepush routine...";
+}
+
+
+alias leepush='cd /myphp/leaderfit/leaderfit; git snap update; git ppv'
+alias prepush=doPrepush
+alias boxpush='cd /myphp/leaderbox; git snap update; git pp'
+alias biggreen='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/big-green.php'
+alias rebuild='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/cron/rebuild-cache.php'
 
 
 
@@ -197,24 +215,6 @@ alias morphic='php -f "/myphp/leaderfit/leaderfit/scripts/modules/ApplicationMor
 alias morphic_trans='php -f "/myphp/leaderfit/leaderfit/scripts/modules/ApplicationMorphicGenerator/morphic-lingfrench-translation.php" --'
 
 
-#------------------------------
-# Lee
-#------------------------------
-
-function doPrepush {
-	myprint "Starting prepush routine...";
-	myprint "saving kamille db"; lback; 
-	myprint "zipping db"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql; 
-	myprint "pushing files to the preprod server"; cd /myphp/leaderfit/leaderfit; git snap update; git pppre;
-	myprint "Endof prepush routine...";
-}
-
-
-alias leepush='cd /myphp/leaderfit/leaderfit; git snap update; git ppv'
-alias prepush=doPrepush
-alias boxpush='cd /myphp/leaderbox; git snap update; git pp'
-alias biggreen='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/big-green.php'
-alias rebuild='php -f /myphp/leaderfit/leaderfit/scripts/leaderfit/cron/rebuild-cache.php'
 
 
 
