@@ -204,6 +204,7 @@ alias xiaotm='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-gen
 alias xiaoees='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomEstimate --prefix=ees_'
 alias xiaoektra='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomTrainingProducts --prefix=ektra_'
 alias xiaolee='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=LeeTheme --prefix=lee_'
+alias xiaoap='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Application --prefix=ap_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
