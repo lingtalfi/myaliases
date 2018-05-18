@@ -102,8 +102,10 @@ alias box='cd /myphp/leaderbox'
 
 
 
-alias lback='mkdir -p /myphp/leaderfit/leaderfit/store/Ekom/database; touch /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql; /Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql'
-alias lrestore='cd /myphp/leaderfit/leaderfit/store/Ekom/database; unzip -o kamille.sql.zip; /Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'; 
+alias lback='mkdir -p /myphp/leaderfit/leaderfit/store/Ekom/database; touch /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql; /Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
+alias lzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql'
+alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'; 
+alias luzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; unzip -o kamille.sql.zip'; 
 alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
 
 
