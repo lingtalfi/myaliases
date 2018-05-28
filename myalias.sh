@@ -103,8 +103,8 @@ alias box='cd /myphp/leaderbox'
 
 
 alias lback='mkdir -p /myphp/leaderfit/leaderfit/store/Ekom/database; touch /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql; /Applications/MAMP/Library/bin/mysqldump -u root -proot kamille > /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'
-alias lzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql'
 alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /myphp/leaderfit/leaderfit/store/Ekom/database/kamille.sql'; 
+alias lzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql'
 alias luzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; unzip -o kamille.sql.zip'; 
 alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
 
@@ -190,8 +190,8 @@ alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 alias slog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.sql.log.txt'
 alias dlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/debug.log.txt'
 alias clog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/cache.log.txt'
-alias mlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/mail.log.txt'
 alias pagelog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/page-perf.log.txt'
+alias mlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/mail.log.txt'
 
 
 # using db prefixes after xiao prefix
@@ -210,8 +210,6 @@ alias xiaolee='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-ge
 alias xiaoap='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Application --prefix=ap_'
 alias xiaoip='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=IpData --prefix=ip_'
 alias xiaouf='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=UserFiles --prefix=uf_'
-alias xiaoecu='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=EkomContactUs --prefix=ecu_'
-alias xiaotm='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=TeamMail --prefix=tm_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
