@@ -210,6 +210,7 @@ alias xiaolee='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-ge
 alias xiaoap='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Application --prefix=ap_'
 alias xiaoip='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=IpData --prefix=ip_'
 alias xiaouf='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=UserFiles --prefix=uf_'
+alias xiaodc='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=DocumentCollector --prefix=dc_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
