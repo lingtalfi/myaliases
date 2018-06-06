@@ -115,7 +115,7 @@ alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
 
 function doPrepush {
 	myprint "Starting prepush routine...";
-	myprint "saving kamille db"; lback; 
+	#myprint "saving kamille db"; lback; 
 	#myprint "zipping db"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql; 
 	myprint "pushing files to the preprod server"; cd /myphp/leaderfit/leaderfit; git snap update; git pppre;
 	myprint "Endof prepush routine...";
