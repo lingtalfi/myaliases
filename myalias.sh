@@ -147,8 +147,23 @@ function doThePull {
  	# now we need to get the database from elsewhere (too heavy for github)
  	# myprint "restoring kamille db"; lrestore;
 }
-
 alias pulll=doThePull
+
+
+function doCleanLogs {
+	myprint "cleaning logs"
+	echo "" > /leeapp/logs/kamille.sql.log.txt
+	echo "" > /leeapp/logs/cache.log.txt
+	echo "" > /leeapp/logs/kamille.log.txt
+	echo "" > /leeapp/logs/php.log.txt
+	echo "" > /leeapp/logs/page-perf.log.txt
+	echo "" > /leeapp/logs/mail.log.txt
+	echo "" > /leeapp/logs/debug.log.txt
+}
+alias cleanlogs=doCleanLogs
+
+
+
 
 
 
