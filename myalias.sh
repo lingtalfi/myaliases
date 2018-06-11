@@ -203,6 +203,7 @@ alias pushh=doThePush
 alias plog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/php.log.txt'
 alias llog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.log.txt'
 alias slog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/kamille.sql.log.txt'
+alias sslog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/srd.log.txt'
 alias dlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/debug.log.txt'
 alias clog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/cache.log.txt'
 alias pagelog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/page-perf.log.txt'
