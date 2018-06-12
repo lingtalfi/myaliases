@@ -115,8 +115,8 @@ alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
 
 function doPrepush {
 	myprint "Starting prepush routine...";
-	#myprint "saving kamille db"; lback; 
-	#myprint "zipping db"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql; 
+	myprint "saving kamille db"; lback; 
+	myprint "zipping db"; cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql; 
 	myprint "pushing files to the preprod server"; cd /myphp/leaderfit/leaderfit; git snap update; git pppre;
 	myprint "Endof prepush routine...";
 }
@@ -227,6 +227,7 @@ alias xiaoap='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-gen
 alias xiaoip='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=IpData --prefix=ip_'
 alias xiaouf='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=UserFiles --prefix=uf_'
 alias xiaodc='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=DocumentCollector --prefix=dc_'
+alias xiaosrd='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Srd --prefix=srd_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
