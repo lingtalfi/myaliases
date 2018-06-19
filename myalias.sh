@@ -230,6 +230,8 @@ alias xiaouf='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-gen
 alias xiaodc='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=DocumentCollector --prefix=dc_'
 alias xiaosrd='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Srd --prefix=srd_'
 alias xiaosf='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=ShoppingFeed --prefix=sf_'
+alias xiaonul='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=NullosAdmin --prefix=nul_'
+alias xiaofmw='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Formaway --prefix=fmw_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
