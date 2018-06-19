@@ -208,6 +208,7 @@ alias dlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/debug.log.txt'
 alias clog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/cache.log.txt'
 alias pagelog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/page-perf.log.txt'
 alias mlog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/mail.log.txt'
+alias flog='tail -f -n 100 /myphp/leaderfit/leaderfit/logs/formaway.log.txt'
 
 
 # using db prefixes after xiao prefix
