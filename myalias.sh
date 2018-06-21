@@ -233,6 +233,7 @@ alias xiaosrd='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-ge
 alias xiaosf='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=ShoppingFeed --prefix=sf_'
 alias xiaonul='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=NullosAdmin --prefix=nul_'
 alias xiaofmw='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=Formaway --prefix=fmw_'
+alias xiaoar='php -f "/myphp/leaderfit/leaderfit/scripts/xiao-kamille-module-generator.php" --  --module=ApplicationRedirect --prefix=ar_'
 
 alias prcc='php -f /myphp/leaderfit/leaderfit/scripts/generator.php'
 alias cachee='rm -r /myphp/leaderfit/leaderfit/cache'
