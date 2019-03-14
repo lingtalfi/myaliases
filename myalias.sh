@@ -30,7 +30,6 @@ alias msite='open "/Applications/MAMP/conf/apache/extra"'
 alias ginit='/pathto/bash/projects/ginit/ginit.sh'
 alias gitpull='git fetch --all; git reset --hard origin/master';
 alias guu='git snap update; git pp';
-alias gsu='php -f /myphp/git-smart-update/smart-update.php'
 
 
 #------------------------------
