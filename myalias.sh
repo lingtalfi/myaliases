@@ -5,6 +5,14 @@ export PS1="\\$ "
 alias ll='ls -lArth'
 alias hostt='open /etc/hosts'
 
+
+#------------------------------
+# PYTHON3
+#------------------------------
+alias p3='python3'
+alias ip3='ipython3'
+
+
 #------------------------------
 # VIM
 #------------------------------
@@ -25,7 +33,27 @@ alias guu='git snap update; git pp';
 alias gsu='php -f /myphp/git-smart-update/smart-update.php'
 
 
-
+#------------------------------
+# ART
+#------------------------------
+alias robots='open /MyDocs/zik/projets/logic/robots-dance/robots-dance.md'
+alias math='open /MyDocs/math/math.md'
+alias zik='open /MyDocs/zik/outils-zik/zik-find-samples.md'
+alias cppp='open /MyDocs/it/cpp'
+alias premiere='open /MyDocs/video/outils/premiere-shortcuts.txt'
+alias blender='open /MyDocs/blender/blender-shortcut.md'
+alias p1='open /MyDocs/blender/developer/p1/facial-rig.md'
+alias blenderp='open /MyDocs/blender/blender-python.md'
+alias blender8='/Applications/Blender/2.8/blender.app/Contents/MacOS/blender'
+alias blenderr='/Applications/Blender/blender.app/Contents/MacOS/blender'
+alias blendert='/Applications/Blender/2.8/blender.app/Contents/MacOS/blender -b -P "/Applications/Blender/blender.app/Contents/Resources/2.79/scripts/addons/ling_tools/test.py"'
+alias logic='open /MyDocs/zik/outils-zik/logic-audio-shortcuts.md'
+alias sound='open /MyDocs/zik/outils-zik/zik-find-samples.md'
+alias clip='open /MyDocs/bd/clip-studio-paint-shortcuts.md'
+alias finale='open /MyDocs/zik/outils-zik/finale-shortcuts.md'
+alias idee='open "/MyDocs/video/idées"'
+alias bourse='open "/MyDocs/richman/trading/bourse-memento.md"'
+alias ae='open "/MyDocs/video/outils/after-effects-shortcuts.txt"'
 
 #------------------------------
 # GENERAL
@@ -37,6 +65,37 @@ alias aas='source "/pathto/bash/projects/myaliases/myalias.sh"'
 alias aap='open "/pathto/bash/projects/myaliases/private/my-private-aliases.sh"'
 alias aau='cd /pathto/bash/projects/myaliases; guu'
 alias tm='source "/pathto/bash/projects/task-manager/tm.sh"'
+
+
+
+#------------------------------
+# CUSTOM AMP
+#------------------------------
+alias apstart='sudo brew services start httpd'
+alias aprestart='sudo brew services restart httpd'
+alias apstop='sudo brew services stop httpd'
+alias apconf='open /usr/local/etc/httpd/httpd.conf'
+alias aphost='open /usr/local/etc/httpd/extra/httpd-vhosts.conf'
+
+alias pconf='open /usr/local/etc/php/7.2/php.ini'
+alias pstart='brew services start php@7.2'
+alias prestart='brew services restart php@7.2'
+alias pstop='brew services stop php@7.2'
+
+alias mstart='brew services start mysql'
+alias mrestart='brew services restart mysql'
+alias mstop='brew services stop mysql'
+
+
+
+#------------------------------
+# JIN CURRENT APP
+#------------------------------
+alias jinlog='tail -f -n 100 "/komin/jin_site_demo/log/jin.log"'
+alias jinerrlog='tail -f -n 100 "/komin/jin_site_demo/log/error.log"'
+alias jinsynlog='tail -f -n 100 "/komin/jin_site_demo/log/app_synopsis.log"'
+
+
 
 
 #------------------------------
@@ -55,9 +114,13 @@ alias wk='wkhtmltopdf'
 alias wstart='sudo nginx; sudo php-fpm'
 
 # php-fpm
-alias pstart='sudo php-fpm'
-alias pstop='sudo killall php-fpm'
-alias pconf='open "/usr/local/etc/php/7.0"'
+# alias pstart='sudo php-fpm'
+# alias pstop='sudo killall php-fpm'
+# alias pconf='open "/usr/local/etc/php/7.0"'
+
+
+
+
 
 # nginx
 nginxPath="/usr/local/Cellar/nginx/1.10.2_1"
@@ -78,9 +141,21 @@ alias nulp='tail -f -n 100 "$nullosPath/log/php.err.log"'
 alias null='tail -f -n 100 "$nullosPath/log/nullos.log"'
 
 
+
+
+
+
 # webwizard
 alias wwiz='bashman -h "/pathto/bash/projects/webmaster-wizard/home" -c myconf -v'
 
+
+#------------------------------
+# Universe
+#------------------------------
+alias kaos='php -f /myphp/universe/Ling/LingTalfi/script/kaos.php --'
+alias kpp='kaos push'
+alias kpu='kaos pushuni'
+alias ouni='open "/myphp/universe"'
 
 
 #------------------------------
@@ -107,6 +182,10 @@ alias lrestore='/Applications/MAMP/Library/bin/mysql -u root -proot kamille < /m
 alias lzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; zip -r kamille.sql.zip kamille.sql'
 alias luzip='cd /myphp/leaderfit/leaderfit/store/Ekom/database; unzip -o kamille.sql.zip'; 
 alias lopen='open /myphp/leaderfit/leaderfit/store/Ekom/database/'
+
+
+
+
 
 
 #------------------------------
@@ -295,11 +374,45 @@ export PATH="/usr/local/libiconv/bin:$PATH"
 export PATH="/usr/local/nginx/sbin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:~/.vimpkg/bin"
+
+# Setting PATH for Python 3.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
+
 # http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
 export PATH="$PATH:/usr/local/mysql/bin"
 export PATH="/Applications/MAMP/Library/bin:$PATH"
+
+
 export PATH="/usr/local/bin:$PATH"
 
 
 
 export APPLICATION_ENVIRONMENT=dev
+
+
+export PATH
+
+
+
+
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
+
+
+# added by Anaconda3 2018.12 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
