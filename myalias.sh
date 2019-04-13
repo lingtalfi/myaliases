@@ -6,11 +6,40 @@ alias ll='ls -lArth'
 alias hostt='open /etc/hosts'
 
 
+
+#------------------------------
+# PUSH ALIAS
+#------------------------------
+function pushAliases {
+	cd "/pathto/bash/projects/myaliases";
+	guu
+}
+
+alias pushalias='pushAliases'
+
+
+
+
 #------------------------------
 # PYTHON3
 #------------------------------
+function changePython {
+	version=$1
+	myprint "updating /usr/local/bin/python3 for version $version"; 
+	rm /usr/local/bin/python3;
+	ln -s  /Library/Frameworks/Python.framework/Versions/$version/bin/python3 /usr/local/bin/python3
+
+	myprint "updating /usr/local/bin/pip3 for version $version"; 
+	rm /usr/local/bin/pip3;
+	ln -s /Library/Frameworks/Python.framework/Versions/$version/bin/pip3
+
+
+}
+
+
 alias p3='python3'
 alias ip3='ipython3'
+alias changepython='changePython'
 
 
 #------------------------------
@@ -153,8 +182,18 @@ alias wwiz='bashman -h "/pathto/bash/projects/webmaster-wizard/home" -c myconf -
 #------------------------------
 alias kaos='php -f /myphp/universe/Ling/LingTalfi/script/kaos.php --'
 alias kpp='kaos push'
+alias kpt='kaos packpushuni'
 alias kpu='kaos pushuni'
+alias kpl='kaos packlightmap a=/komin/jin_site_demo'
 alias ouni='open "/myphp/universe"'
+
+
+#------------------------------
+# Deploy
+#------------------------------
+#alias deploy='php -f /myphp/universe/Ling/Deploy/script/deploy.php --'
+alias dp='deploy'
+alias dpconf='open ~/.deploy/deploy.conf.byml'
 
 
 #------------------------------
@@ -399,19 +438,3 @@ export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 
 
-# added by Anaconda3 2018.12 installer
-# >>> conda init >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    \eval "$__conda_setup"
-else
-    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/anaconda3/etc/profile.d/conda.sh"
-        CONDA_CHANGEPS1=false conda activate base
-    else
-        \export PATH="/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda init <<<
