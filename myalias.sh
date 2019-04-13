@@ -7,16 +7,6 @@ alias hostt='open /etc/hosts'
 
 
 
-#------------------------------
-# PUSH ALIAS
-#------------------------------
-function pushAliases {
-	cd "/pathto/bash/projects/myaliases";
-	guu
-}
-
-alias pushalias='pushAliases'
-
 
 
 
@@ -31,8 +21,12 @@ function changePython {
 
 	myprint "updating /usr/local/bin/pip3 for version $version"; 
 	rm /usr/local/bin/pip3;
-	ln -s /Library/Frameworks/Python.framework/Versions/$version/bin/pip3
+	ln -s /Library/Frameworks/Python.framework/Versions/$version/bin/pip3 /usr/local/bin/pip3
 
+
+	myprint "updating /usr/local/bin/jupyter for version $version"; 
+	rm /usr/local/bin/jupyter;
+	ln -s /Library/Frameworks/Python.framework/Versions/$version/bin/jupyter /usr/local/bin/jupyter
 
 }
 
@@ -59,6 +53,20 @@ alias msite='open "/Applications/MAMP/conf/apache/extra"'
 alias ginit='/pathto/bash/projects/ginit/ginit.sh'
 alias gitpull='git fetch --all; git reset --hard origin/master';
 alias guu='git snap update; git pp';
+
+
+
+#------------------------------
+# PUSH ALIAS
+#------------------------------
+function pushAliases {
+	cd "/pathto/bash/projects/myaliases";
+	guu
+}
+
+alias pushalias='pushAliases'
+
+
 
 
 #------------------------------
@@ -415,7 +423,6 @@ export PATH="$PATH:~/.vimpkg/bin"
 
 # Setting PATH for Python 3.7
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:${PATH}"
 
 # http://dev.mysql.com/doc/refman/5.7/en/osx-installation-notes.html
 export PATH="$PATH:/usr/local/mysql/bin"
