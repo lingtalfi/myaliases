@@ -443,7 +443,7 @@ export APPLICATION_ENVIRONMENT=dev
 export PATH
 
 
-
+export PATH="/Library/Frameworks/Python.framework/Versions/3.7/bin:$PATH"
 
 export PATH="/usr/local/opt/php@7.2/bin:$PATH"
 export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
