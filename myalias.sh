@@ -2,7 +2,7 @@ export PS1="\\$ "
 
 
 
-alias ll='ls -lArth'
+alias ll='ls -lAh'
 alias hostt='open /etc/hosts'
 
 
@@ -27,6 +27,10 @@ function changePython {
 	myprint "updating /usr/local/bin/jupyter for version $version"; 
 	rm /usr/local/bin/jupyter;
 	ln -s /Library/Frameworks/Python.framework/Versions/$version/bin/jupyter /usr/local/bin/jupyter
+
+
+	myprint "exporting path"; 
+	export PATH="/Library/Frameworks/Python.framework/Versions/$version/bin:$PATH"
 
 }
 
