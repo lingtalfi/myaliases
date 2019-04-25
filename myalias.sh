@@ -390,6 +390,7 @@ alias melp='"/pathto/bash/projects/melp/melp.sh"'
 # resize firefox to a specific window size, useful for taking homogeneous screenshots
 alias ff='osascript "/pathto/mac/resize-firefox.scpt"'
 alias ss='osascript "/pathto/mac/resize-firefox.scpt"; sleep 1; a="/pathto/php/projects/nullos-admin/private/doc-screenshots/official/modules/crud-module/configure-list"; screencapture -R1000,50,1300,1000 "$a/capture.png"; open "$a"'
+alias resize='/pathto/mac/resize-browser/resize-firefox.sh'
 
 alias subl='"/Applications/Sublime Text.app/Contents/MacOS/Sublime Text" '
 
